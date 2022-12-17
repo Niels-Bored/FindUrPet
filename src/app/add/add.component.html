@@ -1,0 +1,38 @@
+<div class="container" id="container">
+    
+	
+	<div class="form-container sign-in-container">
+		<form action="#">
+            <br><br>
+			<h1>Lost</h1>
+			<input type="text" placeholder="Color" #color/>
+			<input type="text" placeholder="Description" #description/>
+            <input type="text" placeholder="Breed" #breed/>
+            <input type="text" placeholder="Age" #age/>
+            <input type="text" placeholder="Disappearance" #disapperance/>
+			<input type="text" placeholder="Image" #image/>
+			<input type="text" placeholder="Name" #name/>
+			<button (click)="lost(color.value,description.value,name.value,breed.value,age.value,disapperance.value,image.value)">Ok</button>
+            <p>Your friend doesn't have a name? <span (click)="displayNames()" class="option-names">check this out</span></p>
+            <br><br>
+
+		</form>
+	</div>
+	<div class="overlay-container">
+        <form class="adoption-form">
+		<h1>Adoption</h1>
+			<input type="text" placeholder="Color" #color2/>
+			<input type="text" placeholder="Description" #description2/>
+            <input type="text" placeholder="Age" #age2/>
+            <input type="text" placeholder="Name" #name2/>
+            <input type="text" placeholder="Breed" #breed2/>
+			<input type="text" placeholder="Image" #image2/>
+            
+			<button (click)="adoption(color2.value,description2.value,age2.value,name2.value,breed2.value,image2.value)">Ok</button>
+        </form> 
+        <br>   
+	</div>
+</div>
+
+<app-user-l></app-user-l>
+<app-user-a></app-user-a>

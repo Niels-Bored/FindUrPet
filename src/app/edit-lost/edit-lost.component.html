@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="profile-box">
+        <div class="data">
+            <label>Name: </label>
+            <input type="text" [value]="enombre" #name>
+        </div>
+        <div class="data">
+            <label>Breed: </label>
+            <input type="text" [value]="eraza" #raza>
+        </div>
+        <div class="data">
+            <label>Color: </label>
+            <input type="text" [value]="ecolor" #color>
+        </div>
+        <div class="data">
+            <label>Age: </label>
+            <input type="number" [value]="eedad" #edad>
+        </div>
+        <div class="data larger-data">
+            <label>Description: </label>
+            <input class="large" type="text" [value]="edescripcion" #descripcion>
+        </div>
+        <div class="data larger-data">
+            <label>Image: </label>
+            <input class="large" type="text" [value]="eimagen" #imagen>
+        </div>
+        <div class="data larger-data">
+            <label>Disappearance: </label>
+            <input class="large" type="text" [value]="efecha" #fecha>
+        </div>
+        <button (click)="editData(name.value, raza.value, color.value, edad.value, descripcion.value, imagen.value, fecha.value)" type="button">Edit</button>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+        <div class="container">
+            <div class="profile-box">
+                <img src="../../assets/pictures/images/menu.png" class="menu-icon" alt="">
+                <img src="../../assets/pictures/images/setting.png" class="setting-icon" alt="">
+                <img src="../../assets/pictures/images/bullet.jpg" class="profile-pic" alt="">
+                <h3>{{userName}} {{lastname}} {{lastname2}}</h3>
+                <p>{{email}}</p>
+                <p>{{state}}</p>
+                <div class="social-media">
+                    <img src="../../assets/pictures/images/instagram.png" alt="">
+                    <img src="../../assets/pictures/images/telegram.png" alt="">
+                    <img src="../../assets/pictures/images/dribble.png" alt="">
+                </div>
+                <button routerLink="/profile-panel" type="button">Edit</button>
+                <br><br>
+                <button (click)="close()" type="button">Logout</button>
+                
+            </div>
+        </div>
+    </body>
+</html>

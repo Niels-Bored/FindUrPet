@@ -1,0 +1,18 @@
+<body>
+    <div class="card">
+        <div class="imgBx">
+            <img [src]="imagen" alt="">
+        </div>
+        <div class="content">
+            <div class="details">
+                <h2>{{nombre}}<br><span>{{raza}}</span><br><span>{{correo}}</span><br><span>{{fecha}}</span></h2>
+                <div class="data">
+                    <h5>{{descripcion}}</h5>
+                </div>
+                <div class="actionBtn">
+                    <button (click)="regresar()">Return</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

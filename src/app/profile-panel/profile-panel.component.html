@@ -1,0 +1,78 @@
+
+<div class="container">
+    <div class="profile-box">
+        <div class="data">
+            <label>Email: </label>
+            <input type="text" [value]="uemail" #email>
+        </div>
+        <div class="data">
+            <label>Name: </label>
+            <input type="text" [value]="uuserName" #name>
+        </div>
+        <div class="data">
+            <label>Last Name (1): </label>
+            <input type="text" [value]="ulastname" #lastname1>
+        </div>
+        <div class="data">
+            <label>Last Name (2): </label>
+            <input type="text" [value]="ulastname2" #lastname2>
+        </div>
+        <div class="data">
+            <label>Street: </label>
+            <input type="text" [value]="ustreet" #street>
+        </div>
+        <div class="data">
+            <label>Suburb: </label>
+            <input type="text" [value]="usuburb" #suburb>
+        </div>
+        <div class="data">
+            <label>Street Number: </label>
+            <input type="number" [value]="ustreetnumber" #streetnumber>
+        </div>
+        <div class="data">
+            <label>Phone number: </label>
+            <input type="text" [value]="uphonenumber" #phone>
+        </div>
+        <div class="data">
+            <label>Password: </label>
+            <input type="password" [value]="upassword" #password>
+        </div>
+        <div class="data">
+            <select class="select-state" #state>
+                <option value="1">Aguascalientes</option>
+                <option value="2">Baja California</option>
+                <option value="3">Baja California Sur</option>
+                <option value="4">Campeche</option>
+                <option value="5">Chiapas</option>
+                <option value="6">Chihuahua</option>
+                <option value="7">Coahuila</option>
+                <option value="8">Colima</option>
+                <option value="9">Ciudad de México</option>
+                <option value="10">Durango</option>
+                <option value="11">Estado de México</option>
+                <option value="12">Guanajuato</option>
+                <option value="13">Guerrero</option>
+                <option value="14">Hidalgo</option>
+                <option value="15">Jalisco</option>
+                <option value="16">Michoacán</option>
+                <option value="17">Morelos</option>
+                <option value="18">Nayarit</option>
+                <option value="19">Nuevo León</option>
+                <option value="20">Oaxaca</option>
+                <option value="21">Puebla</option>
+                <option value="22">Queretaro</option>
+                <option value="23">Quintana Roo</option>
+                <option value="24">San Luis Potosí</option>
+                <option value="25">Sinaloa</option>
+                <option value="26">Sonora</option>
+                <option value="27">Tabasco</option>
+                <option value="28">Tamaulipas</option>
+                <option value="29">Tlaxcala</option>
+                <option value="30">Veracruz</option>
+                <option value="31">Yucatán</option>
+                <option value="32">Zacatecas</option>
+            </select>
+        </div>
+        <button (click)="editData(name.value, lastname1.value, lastname2.value, street.value, suburb.value, streetnumber.value, phone.value, email.value, password.value, state.value)" type="button">Edit</button>
+    </div>
+</div>

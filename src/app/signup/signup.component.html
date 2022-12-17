@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Sign Up </h1>
+        
+        <fieldset>
+          
+          <legend>Your Basic Info</legend>
+        
+          <label for="name">Name:</label>
+          <input type="text" #name>
+
+          <label for="name">Last Name (1):</label>
+          <input type="text" #lastname1>
+
+          <label for="name">Last Name (2):</label>
+          <input type="text" #lastname2>
+
+          <label for="name">Phone number:</label>
+          <input type="number" #phonenumber>
+        
+          <label for="email">Email:</label>
+          <input type="email" #email>
+
+          <label for="name">Street:</label>
+          <input type="text" #street>
+
+          <label for="name">Suburb:</label>
+          <input type="text" #suburb>
+
+          <label for="name">Street number:</label>
+          <input type="number" #streetnumber>
+       
+          <label for="password">Password:</label>
+          <input type="password" #password>
+
+          <select class="select-state" #state>
+            <option value="1">Aguascalientes</option>
+            <option value="2">Baja California</option>
+            <option value="3">Baja California Sur</option>
+            <option value="4">Campeche</option>
+            <option value="5">Chiapas</option>
+            <option value="6">Chihuahua</option>
+            <option value="7">Coahuila</option>
+            <option value="8">Colima</option>
+            <option value="9">Ciudad de México</option>
+            <option value="10">Durango</option>
+            <option value="11">Estado de México</option>
+            <option value="12">Guanajuato</option>
+            <option value="13">Guerrero</option>
+            <option value="14">Hidalgo</option>
+            <option value="15">Jalisco</option>
+            <option value="16">Michoacán</option>
+            <option value="17">Morelos</option>
+            <option value="18">Nayarit</option>
+            <option value="19">Nuevo León</option>
+            <option value="20">Oaxaca</option>
+            <option value="21">Puebla</option>
+            <option value="22">Queretaro</option>
+            <option value="23">Quintana Roo</option>
+            <option value="24">San Luis Potosí</option>
+            <option value="25">Sinaloa</option>
+            <option value="26">Sonora</option>
+            <option value="27">Tabasco</option>
+            <option value="28">Tamaulipas</option>
+            <option value="29">Tlaxcala</option>
+            <option value="30">Veracruz</option>
+            <option value="31">Yucatán</option>
+            <option value="32">Zacatecas</option>
+        </select>
+        </fieldset>
+       
+        <button type="submit" (click)="registrarUsuario(name.value, lastname1.value, lastname2.value, street.value, suburb.value, email.value, state.value, streetnumber.value, password.value,phonenumber.value)">Sign Up</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<h2>Testing</h2>
+<div>
+	<label for="voice-control" class="voice">Voice:</label>
+	<div class="ferdiv">
+		<select name="voice" [(ngModel)]="selectedVoice" (change)="demoSelectedVoice()">
+			<option>- Select a voice -</option>
+			<option *ngFor="let voice of voices" [ngValue]="voice">{{ voice.name }}</option>
+		</select>
+	</div>
+</div>
+
+<div>
+	<label for="rate-control">Speed:</label>
+	<div class="ferdiv">
+		<select name="rate" [(ngModel)]="selectedRate" (change)="demoSelectedVoice()">
+			<option>- Volume -</option>
+			<option *ngFor="let rate of rates" [ngValue]="rate">{{ rate }}
+		</select>
+	</div>
+</div>
+
+<div class="form-field">
+	<label for="text-control">Text:</label>
+	<div>
+		<textarea id="text-control"  [(ngModel)]="text"></textarea>
+	</div>
+</div>
+
+<div class="buttons">
+	<button type="button" (click)="speak()">▶️</button>
+	<button type="button" (click)="stop()">⏸️</button>
+</div>
+<p style="font-weight: bold;font-size: 25px;text-align: center;">Web Accessibility ♿</p>
+
